@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "ab";
+  src: url(../icons/Dirooz-FD.ttf);
+}
+html {
+  font-family: "ab" !important;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  overflow: hidden;
+}
+
+header {
+  direction: rtl;
+  background-color: rgba(253, 253, 245, 0.9019607843);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 3;
+}
+header .container-name {
+  flex-grow: 0;
+}
+header .container-name .logo {
+  font-size: 20px;
+  margin-left: 10px;
+}
+header form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+header form input {
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  width: 30%;
+  height: 30px;
+  border: 0.5px solid rgb(160, 158, 158);
+  border-left: none;
+}
+header form input[type=text]::-moz-placeholder {
+  padding: 10px;
+}
+header form input[type=text]::placeholder {
+  padding: 10px;
+}
+header form button[type=submit] {
+  width: 40px;
+  color: rgb(116, 116, 116);
+  background-color: white;
+  margin-right: 0px;
+  padding-right: 0px;
+  border-radius: 20px 0px 0px 20px;
+  border: 0.5px solid rgb(160, 158, 158);
+  border-right: 1px solid rgb(212, 212, 212);
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-grow: 1;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+header ul li .reg {
+  background-color: #F3D67E;
+  padding: 3px 7px;
+  border-radius: 50px;
+}
+
+.dropdown {
+  padding: 15px 0px 15px 0px;
+}
+
+/* CSS for hiding the dropdown menu initially */
+.dropdown-menu {
+  visibility: hidden;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  row-gap: 30px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  height: 0px;
+  width: 350px;
+  flex-wrap: wrap;
+  transition: height 1s ease;
+  background-color: rgba(253, 253, 245, 0.9019607843);
+}
+
+/* CSS for displaying the dropdown menu when hovering over the parent link */
+li:hover > .dropdown-menu {
+  height: 200px;
+  visibility: visible;
+}
+
+.container {
+  scroll-behavior: auto;
+  position: absolute;
+  max-width: 100vw;
+  height: calc(100vh - 100px);
+  top: 100px;
+  left: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+  transition: transform 1s ease;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.gap {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  max-width: 80vw;
+  transition: gap 1s ease;
+}
+
+.container2 {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  height: calc(100vh - 50px);
+  width: 0px;
+  direction: rtl;
+  z-index: 2;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgba(253, 253, 245, 0.9019607843);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: width 1s ease;
+}
+
+.container2 .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: auto;
+  display: none;
+}
+
+.container2 .max {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  width: 20px;
+  height: auto;
+  display: none;
+}
+
+.container2 .image {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  width: 250px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+  border-radius: 20px;
+}/*# sourceMappingURL=shop.css.map */

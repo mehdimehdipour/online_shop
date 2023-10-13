@@ -1,0 +1,36 @@
+@import"../node_modules/bootstrap/scss/functions";
+@import"../node_modules/bootstrap/scss/variables";
+$spacer: 1rem ;
+$custom-spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+  7: $spacer * 10,
+  8: $spacer * 15,
+  9: $spacer * 20,
+  10: $spacer * 27,
+  
+);
+$spacers:map-merge($custom-spacers , $spacers );
+//* adding more options to spacer map------------------------------------------------------------
+.carousel-inner{
+  position: relative;
+  top: 90px;
+  
+}
+.carousel-item{
+  left: 35vw;
+  
+}
+.carousel-indicators{
+position: relative;
+top: 93vh;
+background-color: black;}
+
+
+@import"../scss/custom.css";
+@import"../node_modules/bootstrap/scss/bootstrap.scss"
