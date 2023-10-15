@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../scss/custom.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="scss/custom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <!-- <link rel="stylesheet" href="../css/style.css"> -->
   <title>Document</title>
 </head>
@@ -102,15 +102,15 @@
   <div class="wrapper">
     <i id="left" class="fa-solid fa-angle-left"></i>
     <div class="carousel">
-      <img src="../images/img-1.jpg" alt="img" draggable="false">
-      <img src="../images/img-2.jpg" alt="img" draggable="false">
-      <img src="../images/img-3.jpg" alt="img" draggable="false">
-      <img src="../images/img-4.jpg" alt="img" draggable="false">
-      <img src="../images/img-5.jpg" alt="img" draggable="false">
-      <img src="../images/img-6.jpg" alt="img" draggable="false">
-      <img src="../images/img-7.jpg" alt="img" draggable="false">
-      <img src="../images/img-8.jpg" alt="img" draggable="false">
-      <img src="../images/img-9.jpg" alt="img" draggable="false">
+      <img src="images/img-1.jpg" alt="img" draggable="false">
+      <img src="images/img-2.jpg" alt="img" draggable="false">
+      <img src="images/img-3.jpg" alt="img" draggable="false">
+      <img src="images/img-4.jpg" alt="img" draggable="false">
+      <img src="images/img-5.jpg" alt="img" draggable="false">
+      <img src="images/img-6.jpg" alt="img" draggable="false">
+      <img src="images/img-7.jpg" alt="img" draggable="false">
+      <img src="images/img-8.jpg" alt="img" draggable="false">
+      <img src="images/img-9.jpg" alt="img" draggable="false">
     </div>
     <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
@@ -122,15 +122,15 @@
   <div class="wrapper2">
     <i id="left" class="fa-solid fa-angle-left"></i>
     <div class="carousel2">
-      <img src="../images/img-1.jpg" alt="img" draggable="false">
-      <img src="../images/img-2.jpg" alt="img" draggable="false">
-      <img src="../images/img-3.jpg" alt="img" draggable="false">
-      <img src="../images/img-4.jpg" alt="img" draggable="false">
-      <img src="../images/img-5.jpg" alt="img" draggable="false">
-      <img src="../images/img-6.jpg" alt="img" draggable="false">
-      <img src="../images/img-7.jpg" alt="img" draggable="false">
-      <img src="../images/img-8.jpg" alt="img" draggable="false">
-      <img src="../images/img-9.jpg" alt="img" draggable="false">
+      <img src="images/img-1.jpg" alt="img" draggable="false">
+      <img src="images/img-2.jpg" alt="img" draggable="false">
+      <img src="images/img-3.jpg" alt="img" draggable="false">
+      <img src="images/img-4.jpg" alt="img" draggable="false">
+      <img src="images/img-5.jpg" alt="img" draggable="false">
+      <img src="images/img-6.jpg" alt="img" draggable="false">
+      <img src="images/img-7.jpg" alt="img" draggable="false">
+      <img src="images/img-8.jpg" alt="img" draggable="false">
+      <img src="images/img-9.jpg" alt="img" draggable="false">
     </div>
     <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
@@ -142,22 +142,22 @@
   <div class="wrapper3">
     <i id="left" class="fa-solid fa-angle-left"></i>
     <div class="carousel3">
-      <img src="../images/img-1.jpg" alt="img" draggable="false">
-      <img src="../images/img-2.jpg" alt="img" draggable="false">
-      <img src="../images/img-3.jpg" alt="img" draggable="false">
-      <img src="../images/img-4.jpg" alt="img" draggable="false">
-      <img src="../images/img-5.jpg" alt="img" draggable="false">
-      <img src="../images/img-6.jpg" alt="img" draggable="false">
-      <img src="../images/img-7.jpg" alt="img" draggable="false">
-      <img src="../images/img-8.jpg" alt="img" draggable="false">
-      <img src="../images/img-9.jpg" alt="img" draggable="false">
+      <img src="images/img-1.jpg" alt="img" draggable="false">
+      <img src="images/img-2.jpg" alt="img" draggable="false">
+      <img src="images/img-3.jpg" alt="img" draggable="false">
+      <img src="images/img-4.jpg" alt="img" draggable="false">
+      <img src="images/img-5.jpg" alt="img" draggable="false">
+      <img src="images/img-6.jpg" alt="img" draggable="false">
+      <img src="images/img-7.jpg" alt="img" draggable="false">
+      <img src="images/img-8.jpg" alt="img" draggable="false">
+      <img src="images/img-9.jpg" alt="img" draggable="false">
     </div>
     <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
 
 
   </main>
-  <script src="../js/js.js" defer></script>
+  <script src="js/js.js" defer></script>
 </body>
 
 
