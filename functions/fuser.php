@@ -5,7 +5,7 @@ function login($email,$password){
 
     $pdo=connect_db();
 
-    $query=$pdo->prepare("SELECT email,password,accesslevel FROM users WHERE email='$email'");
+    $query=$pdo->prepare("SELECT username,email,password,accesslevel FROM users WHERE email='$email'");
     $query->execute();
     $res=$query->fetch(PDO::FETCH_OBJ);
 
