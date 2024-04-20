@@ -1,3 +1,8 @@
+<?php include_once 'functions/connect.php';
+include_once 'functions/fuser.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +14,30 @@
 <body>
 <div class="container">
     <h1>ورود</h1>
-    <input style="margin-bottom:70px;" type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
-    <div class="signup-link">
-        <p> حساب کاربری ندارید؟ <a href="./register.php"> ثبت نام کنید </a></p>
-    </div>
-<!--    <button>ورود</button>-->
-    <input type="submit" name="send" value="ورود" class="btn btn-primary">
+    <form method="post">
+        <input style="margin-bottom:70px;" type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <div class="signup-link">
+            <p> حساب کاربری ندارید؟ <a href="./register.php"> ثبت نام کنید </a></p>
+        </div>
+        <!--    <button>ورود</button>-->
+        <input type="submit" name="send" value="ورود" class="btn btn-primary">
+        <?php
+        if(isset($_POST['send']))
+            login($_POST['email'],$_POST['password']);
 
+        if(isset($_POST['remember']))
+        {
+            setcookie('email',$_POST['email']);
+            setcookie('password',$_POST['password']);
+        }
+        else{
+            setcookie('email',"",1);
+            setcookie('password',"",1);
+        }
+
+        ?>
+    </form>
 </div>
 </body>
 </html>
