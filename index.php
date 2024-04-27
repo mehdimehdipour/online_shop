@@ -55,9 +55,8 @@
     <div class="container-name">
         <h1 class="logo">
             <?php
-
+            session_start();
             if (isset($_SESSION['login'])) {
-                session_start();
                 echo $_SESSION['login'];
             } else echo "clothes shop"; ?>
 

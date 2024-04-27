@@ -10,13 +10,21 @@
 <body>
 <div class="container">
     <h1>عضویت</h1>
-    <input style="margin-bottom:70px;" type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
-    <div class="signup-link">
-        <p> حساب کاربری دارید؟ <a href="./login.php"> وارد شوید </a></p>
-    </div>
-<!--        <button>ثبت نام</button>-->
-    <input type="submit" name="send" value="ثبت نام" class="btn btn-primary">
+    <form method="post">
+        <input style="margin-bottom:70px;" type="text" name="info[username]" placeholder="username" required>
+        <input style="margin-bottom:70px;" type="email" name="info[email]" placeholder="Email" required>
+        <input type="password" name="info[password]" placeholder="Password" required>
+        <div class="signup-link">
+            <p> حساب کاربری دارید؟ <a href="./login.php"> وارد شوید </a></p>
+        </div>
+        <!--        <button>ثبت نام</button>-->
+        <input type="submit" name="send" value="ثبت نام" class="btn btn-primary">
+        <?php
+        include_once 'functions/fuser.php';
+        if (isset($_POST['send']))
+            register($_POST['info']);
+        ?>
+    </form>
 </div>
 
 
