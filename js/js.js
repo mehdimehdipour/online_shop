@@ -1,10 +1,12 @@
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
-const menuic=document.getElementById("menu");
-const menu=document.getElementById("menu-bar");
-const categoryic = document.getElementById("cate-ic");
-const categorymenu=document.getElementById('dropdown-menu');
+const menuic = document.getElementById("menu")
+const menu = document.getElementById("menu-bar")
+const categoryic = document.getElementById("cateico");
+const category = document.getElementById("category")
+const profileDiv = document.getElementById("profile") 
+const profileIcon = document.getElementById("profileico")
 
 let isDragStart = false,
   isDragging = false,
@@ -265,26 +267,49 @@ carousel3.addEventListener("touchend", dragStop3);
 
 
 
+var open = false
 function openmenu() {
-  if (menu.classList.contains('show-menu')) {
-    menu.classList.remove('show-menu');
-  } else {
-    menu.classList.add('show-menu');
+  if(open){
+    menu.style.transform = 'translate(384px)';
+    open = false
+    
+  }
+  else {
+    menu.style.transform = 'translate(0px)';
+    open = true
   }
 }
+
+     
+  
+
 menuic.addEventListener('click', openmenu);
 
 
 function toggleCategoryMenu() {
-  if (categorymenu.style.height === '0px' || categorymenu.style.height === '') {
-    categorymenu.style.height = "200px";
-    categorymenu.style.opacity = '1';
-  } else {
-    categorymenu.style.height = "0px";
-    setTimeout(function () {
-      categorymenu.style.opacity = '0';
-    }, 200);
+  if(category.style.height === '0px' || category.style.height ===''){
+    category.style.height ='200px'
+    category.style.opacity = '1'
+    category.style.transition = 'width 2s ease'; 
+   }
+  else{
+    category.style.height='0px'
+    category.style.opacity='0'
+    category.style.transition = 'width 2s ease';
+    }
+  
   }
-}
-categoryic.addEventListener('click', toggleCategoryMenu);
+
+  categoryic.addEventListener('click', toggleCategoryMenu)
+
+  function togggleProfile(){
+    if(profileDiv.style.opacity === '0' || profileDiv.style.opacity === '' ){
+      profileDiv.style.opacity = 1
+    }
+    else{
+      profileDiv.style.opacity = 0
+    }
+  }
+  profileIcon.addEventListener('click' , togggleProfile)
+
 
