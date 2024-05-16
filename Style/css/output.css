@@ -172,6 +172,14 @@
   margin-top: 21px;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
+}
+
 .inline{
   display: inline;
 }
