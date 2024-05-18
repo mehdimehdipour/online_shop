@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="scss/custom.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
 <header>

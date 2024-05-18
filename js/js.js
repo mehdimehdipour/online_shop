@@ -1,10 +1,14 @@
-const carousel = document.querySelector(".carousel"),
-firstImg = carousel.querySelectorAll("img")[0],
-arrowIcons = document.querySelectorAll(".wrapper i");
-const menuic=document.getElementById("menu");
-const menu=document.getElementById("menu-bar");
-const categoryic = document.getElementById("cate-ic");
-const categorymenu=document.getElementById('dropdown-menu');
+const menuic = document.getElementById("menu")
+const menu = document.getElementById("menu-bar")
+const categoryic = document.getElementById("cateico");
+const category = document.getElementById("category")
+const profileDiv = document.getElementById("profile") 
+const profileIcon = document.getElementById("profileico")
+
+
+const carousel1 = document.querySelector(".carousel1");
+const firstImg1 = carousel1.querySelectorAll("img")[0];
+const arrowIcons1 = document.querySelectorAll(".wrapper i");
 
 let isDragStart = false,
   isDragging = false,
@@ -14,44 +18,44 @@ let isDragStart = false,
 
 const showHideIcons = () => {
   // showing and hiding prev/next icon according to carousel scroll left value
-  let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-  arrowIcons[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
-  arrowIcons[1].style.display = carousel.scrollLeft === scrollWidth ? "none" : "block";
+  let scrollWidth = carousel1.scrollWidth - carousel1.clientWidth; // getting max scrollable width
+  arrowIcons1[0].style.display = carousel1.scrollLeft === 0 ? "none" : "block";
+  arrowIcons1[1].style.display = carousel1.scrollLeft === scrollWidth ? "none" : "block";
 };
 
-arrowIcons.forEach((icon) => {
+arrowIcons1.forEach((icon) => {
   icon.addEventListener("click", () => {
-    let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+    let firstImgWidth = firstImg1.clientWidth + 14; // getting first img width & adding 14 margin value
     // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-    carousel.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
+    carousel1.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
     setTimeout(() => showHideIcons(), 60); // calling showHideIcons2 after 60ms
   });
 });
 
 const autoSlide = () => {
   // if there is no image left to scroll then return from here
-  if (carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0)
+  if (carousel1.scrollLeft - (carousel1.scrollWidth - carousel1.clientWidth) > -1 || carousel1.scrollLeft <= 0)
     return;
 
   positionDiff = Math.abs(positionDiff); // making positionDiff2 value positive
-  let firstImgWidth = firstImg.clientWidth + 14;
+  let firstImgWidth = firstImg1.clientWidth + 14;
   // getting difference value that needs to add or reduce from carousel2 left to take the middle img center
   let valDifference = firstImgWidth - positionDiff;
 
-  if (carousel.scrollLeft > prevScrollLeft) {
+  if (carousel1.scrollLeft > prevScrollLeft) {
     // if the user is scrolling to the right
-    return (carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
+    return (carousel1.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
   }
 
   // if the user is scrolling to the left
-  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  carousel1.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 };
 
 const dragStart = (e) => {
   // updating global variables value on mouse down event
   isDragStart = true;
   prevPageX = e.pageX || e.touches[0].pageX;
-  prevScrollLeft = carousel.scrollLeft;
+  prevScrollLeft = carousel1.scrollLeft;
   e.preventDefault();
 };
 
@@ -60,15 +64,15 @@ const dragging = (e) => {
   if (!isDragStart) return;
   e.preventDefault();
   isDragging = true;
-  carousel.classList.add("dragging");
+  carousel1.classList.add("dragging");
   positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-  carousel.scrollLeft = prevScrollLeft - positionDiff;
+  carousel1.scrollLeft = prevScrollLeft - positionDiff;
   showHideIcons();
 };
 
 const dragStop = () => {
   isDragStart = false;
-  carousel.classList.remove("dragging");
+  carousel1.classList.remove("dragging");
 
   if (!isDragging) return;
   isDragging = false;
@@ -77,14 +81,14 @@ const dragStop = () => {
 
 
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("touchstart", dragStart);
+carousel1.addEventListener("mousedown", dragStart);
+carousel1.addEventListener("touchstart", dragStart);
 
 document.addEventListener("mousemove", dragging);
-carousel.addEventListener("touchmove", dragging);
+carousel1.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("touchend", dragStop);
+carousel1.addEventListener("touchend", dragStop);
 
 
 
@@ -265,26 +269,54 @@ carousel3.addEventListener("touchend", dragStop3);
 
 
 
+var open = false
 function openmenu() {
-  if (menu.classList.contains('show-menu')) {
-    menu.classList.remove('show-menu');
-  } else {
-    menu.classList.add('show-menu');
+  if(open){
+    menu.style.transform = 'translate(384px)';
+    open = false
+    
+  }
+  else {
+    menu.style.transform = 'translate(0px)';
+    open = true
   }
 }
+
+     
+  
+
 menuic.addEventListener('click', openmenu);
 
 
 function toggleCategoryMenu() {
-  if (categorymenu.style.height === '0px' || categorymenu.style.height === '') {
-    categorymenu.style.height = "200px";
-    categorymenu.style.opacity = '1';
-  } else {
-    categorymenu.style.height = "0px";
-    setTimeout(function () {
-      categorymenu.style.opacity = '0';
-    }, 200);
+  if(category.style.height === '0px' || category.style.height ===''){
+    category.style.height ='200px'
+    category.style.opacity = '1'
+    category.style.transition = 'width 2s ease'; 
+   }
+  else{
+    category.style.height='0px'
+    category.style.opacity='0'
+    category.style.transition = 'width 2s ease';
+    }
+  
   }
-}
-categoryic.addEventListener('click', toggleCategoryMenu);
+
+  categoryic.addEventListener('click', toggleCategoryMenu)
+ 
+  var ProfileOpen = false
+  function togggleProfile(){
+    if(ProfileOpen){
+      profileDiv.style.opacity = 0
+      ProfileOpen = false
+     
+    }
+    else{
+      profileDiv.style.opacity = 1
+      ProfileOpen = true
+      
+    }
+  }
+  profileIcon.addEventListener('click' , togggleProfile)
+
 

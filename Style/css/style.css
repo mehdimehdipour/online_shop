@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+@font-face {
+  font-family: "ab" !important;
+  src: url(../icons/Dirooz-FD.ttf) !important;
+}
+
+
+header {
+  direction: rtl;
+  background-color: rgba(255, 255, 255, 0.902);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 3;
+  height: 12vh;
+}
+
+
+.best {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.best hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 0.5px solid rgb(95, 95, 95);
+}
+.best p {
+  margin: 0 10px;
+  font-family: "ab" !important;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  header form {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  ul {
+    font-size: 50%;
+    padding-right: 5px;
+    -moz-column-gap: 8px !important;
+         column-gap: 8px !important;
+    flex-grow: 1;
+  }
+  .container-name {
+    flex-grow: 0;
+  }
+  .container-name .logo {
+    font-size: 10px !important;
+    margin: 0px;
+  }
+}
+.wrapper,
+.wrapper2,
+.wrapper3 {
+  padding-bottom: 30px;
+  padding-top: 40px;
+  display: flex;
+  max-width: 75%;
+  position: relative;
+  height: 80%;
+  margin-left: 10%;
+}
+
+.wrapper i,
+.wrapper2 i,
+.wrapper3 i {
+  padding:15px;
+  top: 50%;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #eef5fa;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  /* background-image: url(../../svgs/left.svg); */
+}
+#left{
+  background-image: url(../../svgs/left.svg);
+  left:-50px;
+}
+#right{
+  background-image: url(../../svgs/right.svg);
+  right: -50px;
+}
+
+
+
+
+
+.wrapper i:hover,
+.wrapper2 i:hover,
+.wrapper3 i:hover {
+  background: #d3d9de;
+}
+
+.wrapper i:first-child,
+.wrapper2 i:first-child,
+.wrapper3 i:first-child {
+  left: -22px;
+  display: none;
+}
+
+.wrapper i:last-child,
+.wrapper2 i:last-child,
+.wrapper3 i:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel1,
+.wrapper2 .carousel2,
+.wrapper3 .carousel3 {
+  
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  background-color: #eef5fa;
+  padding: 20px 100px 20px 10px;
+  border-radius: 30px 30px 30px 30px;
+  padding: 50px;
+  padding-bottom: 80px;
+  
+}
+
+.carousel1.dragging,
+.carousel2.dragging2,
+.carousel3.dragging3 {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel1.dragging img,
+.carousel2.dragging2 img,
+.carousel3.dragging3 img {
+  pointer-events: none;
+}
+
+.carousel1 img,
+.carousel2 img,
+.carousel3 img {
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 14px;
+  width: 25%;
+  border-radius: 30px 30px 30px 30px;
+  
+}
+
+.carousel img:first-child,
+.carousel2 img:first-child,
+.carousel3 img:first-child {
+  margin-left: 0px;
+  
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#profile{
+  opacity: 0;
+}
