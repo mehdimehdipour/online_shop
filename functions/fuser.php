@@ -10,6 +10,7 @@ function login($email, $password)
     $query->execute();
     $res = $query->fetch(PDO::FETCH_OBJ);
 
+
     if ($res) {
         if ($res->password == $password) {
             session_start();
@@ -17,9 +18,8 @@ function login($email, $password)
             if ($res->accesslevel == 1)
                 header("location:panel/dashboard.php");
             else header("location:index.php");
-        } else echo "<h6 style=\"color: #c80000; float: left; font-size:14px; padding:10px 25px;\">نام کاربری یا رمز ورود اشتباه است</h6>";
-    } else echo "<h6 style=\"color: #c80000; float: left; font-size:14px; padding:10px 25px;\">نام کاربری یا رمز ورود اشتباه است</h6>";
-
+        } else header("location:login.php?error");
+    } else echo header("location:login.php?error");
 }
 
 function register($info)
