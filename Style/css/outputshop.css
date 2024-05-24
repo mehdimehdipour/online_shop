@@ -150,8 +150,8 @@
   margin-bottom: 1.5rem;
 }
 
-.ml-40 {
-  margin-left: 10rem;
+.ml-48 {
+  margin-left: 12rem;
 }
 
 .ml-5 {
@@ -170,16 +170,16 @@
   margin-right: 0.75rem;
 }
 
-.mr-40 {
-  margin-right: 10rem;
-}
-
 .mr-5 {
   margin-right: 1.25rem;
 }
 
 .mr-7 {
   margin-right: 1.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-4 {
@@ -196,6 +196,30 @@
 
 .mt-\[21px\] {
   margin-top: 21px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .inline {
@@ -220,6 +244,22 @@
 
 .h-80 {
   height: 20rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .min-h-screen {
@@ -262,6 +302,26 @@
   width: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -291,8 +351,16 @@
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-items-center {
@@ -309,6 +377,18 @@
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded-3xl {
@@ -375,6 +455,18 @@
 
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-center {
