@@ -1,9 +1,47 @@
 //پنل مدیریت
 $(document).ready(function() {
     $('.admin-menu > ul > li.category').click(function(){
-        //$('ul.sub-admin',this).slideToggle();
         $("ul.sub-category").slideToggle();
-        //$(".admin-menu  ul  li > ul.sub-admin").slideToggle();
+    });
+});
+$(document).ready(function() {
+    $('.admin-menu > ul > li.article').click(function(){
+        $("ul.sub-article").slideToggle();
+    });
+});
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.slider').click(function(){
+        $("ul.sub-slider").slideToggle();
+    });
+});
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.widget_admin').click(function(){
+        $("ul.sub-widget_admin").slideToggle();
+    });
+});
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.page').click(function(){
+        $("ul.sub-page").slideToggle();
+    });
+});
+$(document).ready(function() {
+    $('.admin-menu > ul > li.setting').click(function(){
+        $("ul.sub-setting").slideToggle();
+    });
+});
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.footer_menu').click(function(){
+        $("ul.sub-footer_menu").slideToggle();
+    });
+});
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.users_admin').click(function(){
+        $("ul.sub-users_admin").slideToggle();
     });
 });
 
