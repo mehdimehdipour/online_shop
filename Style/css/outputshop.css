@@ -150,12 +150,16 @@
   margin-bottom: 1.5rem;
 }
 
-.ml-40 {
-  margin-left: 10rem;
+.ml-48 {
+  margin-left: 12rem;
 }
 
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .ml-8 {
@@ -170,16 +174,16 @@
   margin-right: 0.75rem;
 }
 
-.mr-40 {
-  margin-right: 10rem;
-}
-
 .mr-5 {
   margin-right: 1.25rem;
 }
 
 .mr-7 {
   margin-right: 1.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-4 {
@@ -196,6 +200,10 @@
 
 .mt-\[21px\] {
   margin-top: 21px;
+}
+
+.mt-56 {
+  margin-top: 14rem;
 }
 
 .inline {
@@ -220,6 +228,34 @@
 
 .h-80 {
   height: 20rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-52 {
+  height: 13rem;
 }
 
 .min-h-screen {
@@ -254,12 +290,36 @@
   width: 14rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .w-\[340px\] {
   width: 340px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[240px\] {
+  width: 240px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[160px\] {
+  width: 160px;
 }
 
 .max-w-sm {
@@ -291,12 +351,28 @@
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-items-center {
   justify-items: center;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-16 {
@@ -311,6 +387,14 @@
   gap: 0.75rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -321,6 +405,10 @@
 
 .border {
   border-width: 1px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .bg-\[\#eef5fa\] {
@@ -341,6 +429,18 @@
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#ffffffe6\] {
+  background-color: #ffffffe6;
 }
 
 .p-10 {
@@ -377,8 +477,36 @@
   padding-top: 8rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-56 {
+  padding-top: 14rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-44 {
+  padding-top: 11rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -394,6 +522,11 @@
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
