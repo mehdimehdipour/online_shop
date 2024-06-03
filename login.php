@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </form>
     <div class="text-center mt-4 text-sm">
-        <a href="#" class="text-indigo-500 hover:underline">حساب کاربری ندارید؟ ثبت نام کنید</a>
+        <a href="./register.php" class="text-indigo-500 hover:underline">حساب کاربری ندارید؟ ثبت نام کنید</a>
         <br>
         <br>
 
