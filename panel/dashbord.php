@@ -20,8 +20,8 @@ if (!isset($_SESSION['login'])){
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <a class="btn btn-primary" href="">نمایش سایت</a>
-                <a class="btn btn-danger" href="functions/logout.php">خروج</a>
+                <a class="btn btn-primary" href="../">نمایش سایت</a>
+                <a class="btn btn-danger" href="../functions/logout.php">خروج</a>
 
             </div>
         </div>
