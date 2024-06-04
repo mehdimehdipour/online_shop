@@ -15,8 +15,11 @@ function login($email, $password)
         if ($res->password == $password) {
             session_start();
             $_SESSION['login'] = $res->username;
-            if ($res->accesslevel == 1)
+            if ($res->accesslevel == 1){
                 header("location:panel/dashbord.php");
+                session_start();
+                $_SESSION['admin'] = 1;
+            }
             else header("location:index.php");
         } else header("location:login.php?error");
     } else echo header("location:login.php?error");

@@ -39,13 +39,25 @@
         <div id="profile"
              class="bg-white drop-shadow-sm rounded-3xl h-40 w-32 transition-opacity duration-500 absolute top-16 left-2">
             <ul class="flex flex-col gap-3 p-3 list-none mr-7">
-                <?php session_start(); if (isset($_SESSION['login'])): ?>
-                <li><a href="functions/logout.php">خروج</a></li>
-                <?php else: ?>
+
+                <?php session_start(); if (!isset($_SESSION['login'])): ?>
                 <li><a href="./login.php">ورود</a></li>
                 <?php endif; ?>
-                <li><a href="">پیام ها</a></li>
+
+                <?php if(isset($_SESSION['admin'])): ?>
+                <li><a href="./panel/dashbord.php">پنل ادمین</a></li>
+                <?php endif;?>
+
                 <li><a href="">پروفایل</a></li>
+
+                <?php if(!isset($_SESSION['admin'])):?>
+                <li><a href="#">پیغام ها</a></li>
+                <?php endif; ?>
+
+                <?php if (isset($_SESSION['login'])): ?>
+                <li><a href="functions/logout.php">خروج</a></li>
+                <?php endif; ?>
+
             </ul>
         </div>
     </div>
