@@ -43,6 +43,11 @@ if (!isset($_SESSION['login'])){
 
                         switch ($_GET['page']){
 
+                            case 'add_menu' : include_once 'main-menu/add.php';
+                                break;
+
+                            case 'list_menu' : include_once 'main-menu/list.php';
+                                break;
                             case 'add_category' : include_once 'category/add.php';
                             break;
 
