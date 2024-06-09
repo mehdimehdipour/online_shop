@@ -14,3 +14,10 @@ function add_slider($info,$img){
     VALUES ('$title','$url','$img','$status')");
     $query->execute();
 }
+function list_slider(){
+    $pdo = connect_db();
+    $query=$pdo->prepare("SELECT * FROM slider_tbl ");
+    $query->execute();
+    $res=$query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
