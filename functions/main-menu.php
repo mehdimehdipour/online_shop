@@ -73,3 +73,22 @@ function delete_menu($id)
     $query=$pdo->prepare("DELETE FROM menu_tbl WHERE id='$id'");
     $query->execute();
 }
+
+function show_menu()
+{
+    $pdo = connect_db();
+    $query = $pdo->prepare("SELECT * FROM menu_tbl where parent=0 AND status=1");
+    $query->execute();
+    $res = $query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
+
+
+function show_submenu($menu)
+{
+    $pdo = connect_db();
+    $query = $pdo->prepare("SELECT * FROM menu_tbl WHERE parent=$menu AND status='on'");
+    $query->execute();
+    $res = $query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
