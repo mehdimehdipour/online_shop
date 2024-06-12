@@ -41,3 +41,14 @@ function update_slider($id,$info,$img){
     $query=$pdo->prepare("UPDATE slider_tbl SET title='$title',url='$url',img='$img',status='$status' WHERE id = '$id'");
     $query->execute();
 }
+function delete_slider($id){
+    $pdo = connect_db();
+
+    $query2=$pdo->prepare("SELECT * FROM slider_tbl WHERE id='$id'");
+    $query2->execute();
+    $res=$query2->fetch(PDO::FETCH_OBJ);
+    unlink($res->img);
+
+    $query = $pdo->prepare("DELETE FROM slider_tbl WHERE id='$id'");
+    $query->execute();
+}
