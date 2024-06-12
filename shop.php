@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style/css/outputshop.css" />
+
+      <link rel="stylesheet" href="Style/css/style.css" />
+      <link rel="stylesheet" href="Style/css/output.css" />
+      <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <title>Document</title>
     <style>
       #shop {
@@ -28,39 +32,7 @@
   </head>
   <body>
     <?php include_once './header.php'?>
-      <div class="relative">
-        <img src="svgs/menu.svg" id="menu" alt="Menu" class="w-10 mr-5" />
-        <div
-          id="menu-bar"
-          class="absolute top-12 -right-3 flex flex-col align-middle gap-2 h-52 w-[160px] bg-white m-3 drop-shadow-md rounded-3xl transition-transform duration-1500 translate-x-96 z-10"
-        >
-          <ul class="flex flex-col list-none gap-3">
-            <li><a href="#" class="text-xl">پارچه</a></li>
-            <hr />
-            <li><a href="#" class="text-xl">خیاط</a></li>
-            <hr />
-            <li><a href="#" class="text-xl">درباره ما</a></li>
-            <hr />
-          </ul>
-        </div>
-      </div>
-      <div>
-        <p class="font-bold text-3xl">logo</p>
-      </div>
-      <div class="relative">
-        <img src="svgs/user.svg" id="profileico" alt="User" class="w-10 ml-8" />
-        <div
-          id="profile"
-          class="bg-white drop-shadow-md rounded-3xl h-40 w-32 transition-opacity opacity-0 duration-500 absolute top-16 left-2"
-        >
-          <ul class="flex flex-col gap-3 p-3 list-none mr-7">
-            <li><a href="#">ورود</a></li>
-            <li><a href="#">پیام ها</a></li>
-            <li><a href="#">پروفایل</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+
     <div
       class="bg-white h-20 w-screen pt-32 flex flex-row border-4 justify-center gap-20"
     >

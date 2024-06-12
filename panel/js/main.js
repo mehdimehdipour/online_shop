@@ -1,4 +1,10 @@
 //پنل مدیریت
+
+$(document).ready(function() {
+    $('.admin-menu > ul > li.menu').click(function(){
+        $("ul.sub-menu").slideToggle();
+    });
+});
 $(document).ready(function() {
     $('.admin-menu > ul > li.category').click(function(){
         $("ul.sub-category").slideToggle();
