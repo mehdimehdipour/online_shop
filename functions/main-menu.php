@@ -35,3 +35,11 @@ function count_menu()
     $res=$query->fetchAll(PDO::FETCH_OBJ);
     return $res;
 }
+function list_submenu($menu)
+{
+    $pdo=connect_db();
+    $query=$pdo->prepare("SELECT * FROM menu_tbl WHERE parent=$menu");
+    $query->execute();
+    $res=$query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
