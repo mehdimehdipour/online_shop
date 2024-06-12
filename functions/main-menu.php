@@ -66,3 +66,10 @@ function update_menu($id,$info)
     $query = $pdo->prepare("UPDATE menu_tbl SET title='$title', sort='$sort', parent='$parent', status='$status' where id='$id'");
     $query->execute();
 }
+
+function delete_menu($id)
+{
+    $pdo=connect_db();
+    $query=$pdo->prepare("DELETE FROM menu_tbl WHERE id='$id'");
+    $query->execute();
+}

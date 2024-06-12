@@ -1,5 +1,5 @@
 <?php
-include_once '../functions/f-category.php';
+include_once '../functions/main-menu.php';
 $id=$_GET['id'];
-delete_category($id);
-header("location:dashbord.php?page=list_category&delete=ok");
+delete_menu($id);
+header("location:dashbord.php?page=list_menu&delete=ok");

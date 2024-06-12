@@ -55,9 +55,9 @@ if (!isset($_SESSION['login'])) {
                                     include_once 'main-menu/edit.php';
                                     break;
 
-//                                case 'delete_menu' :
-//                                    include_once 'main-menu/delete.php';
-//                                    break;
+                                case 'delete_menu' :
+                                    include_once 'main-menu/delete.php';
+                                    break;
 
 
                                 case 'add_category' :
