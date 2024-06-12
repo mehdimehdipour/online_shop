@@ -23,12 +23,14 @@ include_once '../functions/main-menu.php';
             <select class="form-control" name="info[parent]">
                 <option value="0">سرگروه</option>
 
-<!--                --><?php
-//                    $parrent=list_category();
-//                    foreach ($parrent as $val) : ?>
-<!--                        <option value="--><?php //echo $val->id; ?><!--">--><?php //echo $val->title; ?><!--</option>-->
-<!---->
-<!--                    --><?php //endforeach; ?>
+                <?php
+                    $parent=list_menu();
+                    foreach ($parent as $val) : ?>
+                        <option value="<?php echo $val->id; ?>"><?php echo $val->title; ?></option>
+
+                    <?php endforeach; ?>
+
+
 
             </select><br>
 

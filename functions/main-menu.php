@@ -17,3 +17,21 @@ function add_menu($info)
     $query->execute();
 
 }
+
+function list_menu()
+{
+    $pdo=connect_db();
+    $query=$pdo->prepare("SELECT * FROM menu_tbl where parent=0");
+    $query->execute();
+    $res=$query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
+
+function count_menu()
+{
+    $pdo=connect_db();
+    $query=$pdo->prepare("SELECT * FROM menu_tbl");
+    $query->execute();
+    $res=$query->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
