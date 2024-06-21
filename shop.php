@@ -1,3 +1,6 @@
+<?php include_once 'functions/f-category.php';?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,10 +39,12 @@
     <div
       class="bg-white h-20 w-screen pt-32 flex flex-row border-4 justify-center gap-20"
     >
-      <a href="#" class="text-xl">مردانه</a>
-      <a href="#" class="text-xl">زنانه</a>
-      <a href="#" class="text-xl">بچگانه</a>
-      <a href="#" class="text-xl">برندها</a>
+        <?php
+        $list_cat=show_category();
+        foreach ($list_cat as $value) :
+        ?>
+      <a href="#" class="text-xl"><?php echo $value->title; ?></a>
+        <?php endforeach; ?>
     </div>
     <div class="flex justify-between">
       <div

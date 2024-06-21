@@ -75,8 +75,8 @@ include_once '../functions/connect.php';
                 </a>
             </li>
             <ul class="sub-category">
-                <li><a href="dashbord.php?page=list_menu">همه دسته ها</a></li>
-                <li><a href="dashbord.php?page=add_menu">افزودن دسته جدید</a></li>
+                <li><a href="dashbord.php?page=list_category">همه دسته ها</a></li>
+                <li><a href="dashbord.php?page=add_category">افزودن دسته جدید</a></li>
             </ul>
 
 

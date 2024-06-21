@@ -20,17 +20,17 @@ include_once '../functions/f-category.php';
             <input class="form-control inputbig" type="text" name="info[sort]" placeholder="ترتیب نمایش را بصورت عددی وارد کنید">
             <br>
 
-            <select class="form-control" name="info[parrent]">
-                <option value="0">سرگروه</option>
-
-                <?php
-                    $parrent=list_category();
-                    foreach ($parrent as $val) : ?>
-                        <option value="<?php echo $val->id; ?>"><?php echo $val->title; ?></option>
-
-                    <?php endforeach; ?>
-
-            </select><br>
+<!--            <select class="form-control" name="info[parrent]">-->
+<!--                <option value="0">سرگروه</option>-->
+<!---->
+<!--                --><?php
+//                    $parrent=list_category();
+//                    foreach ($parrent as $val) : ?>
+<!--                        <option value="--><?php //echo $val->id; ?><!--">--><?php //echo $val->title; ?><!--</option>-->
+<!---->
+<!--                    --><?php //endforeach; ?>
+<!---->
+<!--            </select><br>-->
 
             <div class="custom-control custom-switch">
                 <input name="info[status]" type="checkbox" class="custom-control-input" id="customSwitch1" checked>
