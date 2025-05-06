@@ -13,10 +13,8 @@ The primary goal of this project is to enhance learning and improve the skills o
 Each team member contributes with enthusiasm and dedication to the development and enhancement of this website.
 We utilize this opportunity for further learning and sharing knowledge with each other.
 
-Project Status: 
+## Project Status: 
 This project is currently incomplete. Reasons for incompletion include: time constraints, shifting priorities, specific technical challenges. 
-
-Future of the Project: 
 We hope to complete this project and add more features in the future.
 
 Note: This project was primarily an educational undertaking, and therefore some best practices may not have been fully adhered to.
